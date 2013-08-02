@@ -197,6 +197,57 @@ as.numeric(x.factor)
 
 --- .segue .dark
 
+## Common errors
+
+---
+## Common errors
+
+
+```r
+library(ada)
+```
+
+```
+## Error: there is no package called 'ada'
+```
+
+
+> + Usually means that R package is not installed. Install it using `install.packages('ada')`
+
+---
+## Common errors
+
+
+```r
+data(mtcars)
+sumary(mtcars)
+```
+
+```
+## Error: could not find function "sumary"
+```
+
+
+> + Check the spelling of your function. Here it should be `summary`, i.e., you missed a `m`
+
+---
+## Common errors
+
+
+```r
+asfactor(1:10, ecxlud = NA)
+```
+
+```
+## Error: could not find function "asfactor"
+```
+
+
+> + Missing a `.`. The function is `as.factor`
+> + Most 2-word function names in R are separated by `.`
+
+--- .segue .dark
+
 ## Transformations
 
 ---

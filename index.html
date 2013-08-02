@@ -395,7 +395,7 @@ as.numeric(x.factor)
 
       <slide class="segue dark" id="slide-18" style="background:;">
   <hgroup>
-    <h2>Transformations</h2>
+    <h2>Common errors</h2>
   </hgroup>
   <article>
     
@@ -408,6 +408,91 @@ as.numeric(x.factor)
 </slide>
 
       <slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Common errors</h2>
+  </hgroup>
+  <article>
+    <pre><code class="r">library(ada)
+</code></pre>
+
+<pre><code>## Error: there is no package called &#39;ada&#39;
+</code></pre>
+
+<ul class = "build">
+<li>Usually means that R package is not installed. Install it using <code>install.packages(&#39;ada&#39;)</code></li>
+</ul>
+
+    <div id="footer">
+  <div class='runhead'><p style='text-align:right'>Introduction to R</p></div>
+  </div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Common errors</h2>
+  </hgroup>
+  <article>
+    <pre><code class="r">data(mtcars)
+sumary(mtcars)
+</code></pre>
+
+<pre><code>## Error: could not find function &quot;sumary&quot;
+</code></pre>
+
+<ul class = "build">
+<li>Check the spelling of your function. Here it should be <code>summary</code>, i.e., you missed a <code>m</code></li>
+</ul>
+
+    <div id="footer">
+  <div class='runhead'><p style='text-align:right'>Introduction to R</p></div>
+  </div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Common errors</h2>
+  </hgroup>
+  <article>
+    <pre><code class="r">asfactor(1:10, ecxlud = NA)
+</code></pre>
+
+<pre><code>## Error: could not find function &quot;asfactor&quot;
+</code></pre>
+
+<ul class = "build">
+<li>Missing a <code>.</code>. The function is <code>as.factor</code></li>
+<li>Most 2-word function names in R are separated by <code>.</code></li>
+</ul>
+
+    <div id="footer">
+  <div class='runhead'><p style='text-align:right'>Introduction to R</p></div>
+  </div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="segue dark" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Transformations</h2>
+  </hgroup>
+  <article>
+    
+    <div id="footer">
+  <div class='runhead'><p style='text-align:right'>Introduction to R</p></div>
+  </div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h2>transform</h2>
   </hgroup>
@@ -426,7 +511,7 @@ mtcars &lt;- transform(mtcars, kmpg = mpg*1.6)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-20" style="background:;">
+      <slide class="" id="slide-24" style="background:;">
   <hgroup>
     <h2>Subsetting</h2>
   </hgroup>
@@ -449,7 +534,7 @@ mtcars &lt;- transform(mtcars, kmpg = mpg*1.6)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="segue dark" id="slide-21" style="background:;">
+      <slide class="segue dark" id="slide-25" style="background:;">
   <hgroup>
     <h2>&quot;Apply&quot;ing yourself</h2>
   </hgroup>
@@ -463,7 +548,7 @@ mtcars &lt;- transform(mtcars, kmpg = mpg*1.6)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-22" style="background:;">
+      <slide class="" id="slide-26" style="background:;">
   <hgroup>
     <h2>apply</h2>
   </hgroup>
@@ -483,7 +568,7 @@ apply(X, 2, max) # maximum within columns
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-23" style="background:;">
+      <slide class="" id="slide-27" style="background:;">
   <hgroup>
     <h2>lapply</h2>
   </hgroup>
@@ -511,7 +596,7 @@ lapply(x, sort)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="segue dark" id="slide-24" style="background:;">
+      <slide class="segue dark" id="slide-28" style="background:;">
   <hgroup>
     <h2>Wickham&#39;s duo: reshaping and split-apply-combine</h2>
   </hgroup>
@@ -525,7 +610,7 @@ lapply(x, sort)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-25" style="background:;">
+      <slide class="" id="slide-29" style="background:;">
   <hgroup>
     <h2>reshape2</h2>
   </hgroup>
@@ -543,7 +628,7 @@ lapply(x, sort)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-26" style="background:;">
+      <slide class="" id="slide-30" style="background:;">
   <hgroup>
     <h2>Split-apply-combine</h2>
   </hgroup>
@@ -564,7 +649,7 @@ lapply(x, sort)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-27" style="background:;">
+      <slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>plyr</h2>
   </hgroup>
@@ -590,7 +675,7 @@ dlply(mtcars,~cyl)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="segue dark" id="slide-28" style="background:;">
+      <slide class="segue dark" id="slide-32" style="background:;">
   <hgroup>
     <h2>Visualization</h2>
   </hgroup>
@@ -604,7 +689,7 @@ dlply(mtcars,~cyl)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-29" style="background:;">
+      <slide class="" id="slide-33" style="background:;">
   <hgroup>
     <h2>Basic plots</h2>
   </hgroup>
@@ -618,7 +703,7 @@ dlply(mtcars,~cyl)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-30" style="background:;">
+      <slide class="" id="slide-34" style="background:;">
   <hgroup>
     <h2>Small multiples</h2>
   </hgroup>
@@ -632,7 +717,7 @@ dlply(mtcars,~cyl)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-31" style="background:;">
+      <slide class="" id="slide-35" style="background:;">
   <hgroup>
     <h2>ggplot2</h2>
   </hgroup>
@@ -646,7 +731,7 @@ dlply(mtcars,~cyl)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-32" style="background:;">
+      <slide class="" id="slide-36" style="background:;">
   <hgroup>
     <h2>rCharts</h2>
   </hgroup>
@@ -667,7 +752,7 @@ n1 &lt;- nPlot(Freq ~ Hair, group = &quot;Eye&quot;, data = hair_eye_male, type 
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="segue dark" id="slide-33" style="background:;">
+      <slide class="segue dark" id="slide-37" style="background:;">
   <hgroup>
     <h2>Modeling</h2>
   </hgroup>
@@ -681,7 +766,7 @@ n1 &lt;- nPlot(Freq ~ Hair, group = &quot;Eye&quot;, data = hair_eye_male, type 
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="segue dark" id="slide-34" style="background:;">
+      <slide class="segue dark" id="slide-38" style="background:;">
   <hgroup>
     <h2>Reporting</h2>
   </hgroup>
@@ -695,7 +780,7 @@ n1 &lt;- nPlot(Freq ~ Hair, group = &quot;Eye&quot;, data = hair_eye_male, type 
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-35" style="background:;">
+      <slide class="" id="slide-39" style="background:;">
   <hgroup>
     <h2>Markdown</h2>
   </hgroup>
@@ -711,7 +796,7 @@ I prefer <code>pandoc</code> flavor of markdown for it&#39;s flexibility<p></p>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-36" style="background:;">
+      <slide class="" id="slide-40" style="background:;">
   <hgroup>
     <h2>knitr</h2>
   </hgroup>
@@ -731,7 +816,7 @@ I prefer <code>pandoc</code> flavor of markdown for it&#39;s flexibility<p></p>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-37" style="background:;">
+      <slide class="" id="slide-41" style="background:;">
   <hgroup>
     <h2>pander</h2>
   </hgroup>
@@ -746,7 +831,7 @@ I prefer <code>pandoc</code> flavor of markdown for it&#39;s flexibility<p></p>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="segue dark" id="slide-38" style="background:;">
+      <slide class="segue dark" id="slide-42" style="background:;">
   <hgroup>
     <h2>Presentations</h2>
   </hgroup>
@@ -760,7 +845,7 @@ I prefer <code>pandoc</code> flavor of markdown for it&#39;s flexibility<p></p>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-39" style="background:;">
+      <slide class="" id="slide-43" style="background:;">
   <hgroup>
     <h2>Slidify</h2>
   </hgroup>
