@@ -38,7 +38,7 @@ pander(head(dat))
 ```{r echo=FALSE}
 require(ggplot2)
 t1 <- table(dat2$value)
-print(qplot(names(t1), unclass(t1),geom='bar', stat='identity')+labs(x='',y='Frequency')+theme(axis.text.x=element_text(angle=45,vjust=1,hjust=1)))
+print(qplot(names(t1), unclass(t1),geom='bar', stat='identity')+labs(x='Subjects',y='Frequency')+theme(axis.text.x=element_text(angle=45,vjust=1,hjust=1)))
 
 ```
 
