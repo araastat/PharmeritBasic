@@ -1,0 +1,36 @@
+.logo {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+   height:60px; /* Height of the footer */
+}
+
+.runhead {
+  position:absolute;
+  bottom:0px;
+  right:25px;
+  height:60px;
+  color:#2c829c;
+  font-weight:bold;
+}
+
+/*This suppresses the page numbering*/
+slides > slide:not(.nobackground):after {
+  content: "";
+}
+
+.segue h2 {
+  color:#d48a38;
+}
+.segue .runhead {
+  color:#d48a38;
+}
+slide:not(.segue) h2 {
+  color:#2c829c;
+}
+
+.title-slide hgroup > h1,
+.title-slide hgroup > h2,
+.title-slide hgroup > p{
+  color:#2c829c;
+}

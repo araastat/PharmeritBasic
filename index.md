@@ -2,26 +2,32 @@
 title       : Introduction to R
 subtitle    : Getting up and running
 author      : Abhijit Dasgupta, PhD 
-job         : 
+job         : ARAASTAT
 framework   : io2012   # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : mathjax           # {mathjax, quiz, bootstrap}
 mode        : standalone # {standalone, draft}
 ---
+## Copyright
 
-## Introduction to R
-
-Abhijit Dasgupta, PhD<br>
-ARAASTAT<br>
-@webbedfeet
-
-<div style="position:fixed; bottom:50px; left:50px; ">
-    <img src="assets/img/DC2_logo_wide_720wide.png" style="height:100px" />
-</div>
+<blockquote style='margin:100px;'>
+This document is intended for use by the attendees of this customized R training course offered by ARAASTAT. Any unauthorised use or copying of this document is strictly prohibited. The information in this document is intended to be delivered in a classroom setting and is not complete without the associated interactions with the instructor.
+</blockquote>
+<p style="text-align:right">&copy; 2013, Abhijit Dasgupta (ARAASTAT). All rights reserved.</p>
 
 ---
+## Who am I?
 
++ A PhD biostatistician
++ A data scientist and consultant
++ Over 19 years experience with R, S+, S
++ Over 10 years experience in bioinformatics
++ Consult for NIH, local startups
++ Organize Statistical Programming DC meetup
++ Board member, Data Community DC
+
+---
 ## Why R?
 
 + R is free (GPL3) statistical software
@@ -31,9 +37,6 @@ ARAASTAT<br>
 + R can be accessed from SAS, SPSS, Python, Java
 + R can be accessed from Oracle, SAP, Netezza, Teradata, Greenplum
 
-<div style="position:fixed; bottom:0; left:800px; ">
-    <img src="assets/img/DC2_logo_wide_720wide.png" style="height:40px" />
-</div>
 
 ---
 
@@ -298,10 +301,6 @@ For example, ddply, dlply, ldply, etc.
 ddply(mtcars, ~cyl, summarise, mean.mpg=mean(mpg))
 dlply(mtcars,~cyl)
 ```
-
---- .segue .dark
-
-## Now for something problematic
 
 --- .segue .dark
 
