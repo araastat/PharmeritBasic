@@ -17,6 +17,12 @@ This document is intended for use by the attendees of this customized R training
 <p style="text-align:right">&copy; 2013, Abhijit Dasgupta (ARAASTAT). All rights reserved.</p>
 
 ---
+## This tutorial
+
++ Slides can be seen at [http://araastat.github.io/PharmeritBasic](http://araastat.github.io/PharmeritBasic)
++ All files, datasets, code can be downloaded from [http://www.github.com/araastat/Pharmerit.git](http://www.github.com/araastat/Pharmerit.git)
+
+
 ## Who am I?
 
 + A PhD biostatistician
