@@ -19,11 +19,16 @@ This document is intended for use by the attendees of this customized R training
 ---
 ## This tutorial
 
-+ Slides can be seen at [http://araastat.github.io/PharmeritBasic](http://araastat.github.io/PharmeritBasic)
-+ All files, datasets, code can be downloaded from [http://www.github.com/araastat/Pharmerit.git](http://www.github.com/araastat/Pharmerit.git)
+| What | Where |
+|------------|--------------------------------|
+|Slides      |   [http://araastat.github.io/PharmeritBasic](http://araastat.github.io/PharmeritBasic) |
+|Code        |    [http://www.github.com/araastat/PharmeritBasic.git](http://www.github.com/araastat/PharmeritBasic.git) |
+  
 
-
+---
 ## Who am I?
+
+
 
 + A PhD biostatistician
 + A data scientist and consultant
@@ -33,11 +38,50 @@ This document is intended for use by the attendees of this customized R training
 + Organize Statistical Programming DC meetup
 + Board member, Data Community DC
 
+|     |    |
+|-----|----|
+|Phone | (301) 385-3067 |
+|E-mail | adasgupta@araastat.com |
+|Twitter | @webbedfeet |
+
+---
+## Expectations
+
+### What to expect
++ Overview of R and how to get started with analytics using R
++ Hands-on examples
++ A launching pad for your adoption and use of R
+
+### What <u>not</u> to expect
++ A comprehensive, all-encompassing description of R
++ Covering everything R can do
+
+--- 
+## The way forward from here
+### Use R for as many projects as possible
+### Work through the "steep" learning curve
+### Use available resources both within R and online
+
+---
+## What you'll get
++ These slides and code
++ Everything I live code
++ An annotated document of the live code tomorrow
+
+--- .segue .dark
+
+## R
+
 ---
 ## Why R?
 
-+ R is free (GPL3) statistical software
-+ R is a powerful development platform for statistical algorithms
+> + R is the 18th letter of the alphabet
+
+---
+## Why R?
+
+> + R is free (GPL3) statistical software
+> + R is a powerful development platform for statistical algorithms
 + R is an ecosystem of over 4500 user-contributed packages
 + R is flexible, powerful and often cutting-edge
 + R can be accessed from SAS, SPSS, Python, Java
@@ -48,7 +92,7 @@ This document is intended for use by the attendees of this customized R training
 
 ## Why R?
 
-+ Standard and cutting-edge statistical modeling
+> + Standard and cutting-edge statistical modeling
 + Flexible data munging
 + High-quality visualizations
 + Reproducible and automated reporting
