@@ -1,40 +1,27 @@
 
-```{r echo=FALSE,results='hide'}
+## @knitr echo=FALSE,results='hide'
 library(xlsx)
 library(reshape2)
 dat <- read.xlsx('Pharmerit.xlsx',sheetName=1)
 names(dat)[-1] <- paste('V',1:(ncol(dat)-1),sep='')
 dat11 <- t(dat)
 dat2 <- melt(dat, id='Name',na.rm=T)
-```
 
-## Pharmerit
 
-There are `r nrow(dat)` people attending today. 
-
-Hello `r paste(dat$Name, sep=', ')`
-
-The dataset we got is ragged!!
-```{r echo=FALSE, results='markdown'}
+## @knitr echo=FALSE, results='markdown'
 require(pander)
 pander(head(dat))
 
-```
 
----
-## Specialities
 
-```{r echo=FALSE}
+## @knitr echo=FALSE
 require(ggplot2)
 t1 <- table(dat2$value)
 print(qplot(names(t1), unclass(t1),geom='bar', stat='identity')+labs(x='Subjects',y='Frequency')+theme(axis.text.x=element_text(angle=45,vjust=1,hjust=1)))
 
-```
 
----
-## Groups
 
-```{r echo=FALSE}
+## @knitr echo=FALSE
 distance=matrix(0,nrow(dat),nrow(dat))
 for(i in 1:(nrow(dat)-1)){
   for (j in 2:nrow(dat)){
@@ -45,6 +32,5 @@ for(i in 1:(nrow(dat)-1)){
 colnames(distance) <- row.names(distance) <- as.character(dat$Name
                                                           )
 plot(hclust(as.dist(distance)))
-```
 
 
